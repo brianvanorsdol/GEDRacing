@@ -14,13 +14,13 @@ Provide a robust, highly modular grassroots-level Motorsport Development Board (
 * ENTER # OF GPIO HERE***
   * ENTER ANALOG PINS HERE***
   * ENTER DIGITAL PINS HERE***
-* Onboard Bluetooth Classic/BLE and Wifi\
 * Programmable notification LED
 * USB-C
 * Two CANbus tranceivers to create an isolated CANbus from the vehicle and facilitate lightweight and familiar communication to a variety of peripherals
 * External power/data distribution node 
 * Rugged waterproof Deutsch enclosure
 * Deutsch DTM connectors
+* Removable storage
 
 # Nice to Haves:
 * Default Read-only mode - The MDB will always be set to a "read-only" mode for the CANbus connection to the vehicle to prevent accidental writing to the vehicle CANbus

@@ -73,8 +73,8 @@ constexpr uint8_t YELLOW_LEDS = 3;
 constexpr uint8_t RED_LEDS = 2;
 
 // Pin definitions
-constexpr uint8_t CAN_TX_PIN = 8;
-constexpr uint8_t CAN_RX_PIN = 7;
+constexpr uint8_t CAN_TX_PIN = 43;
+constexpr uint8_t CAN_RX_PIN = 44;
 constexpr uint8_t NEOPIXEL_PIN = 1;
 
 // CAN configuration
@@ -135,11 +135,13 @@ void setup() {
     startupSequence();
 
     // Debug print initial values
+    /*
     Serial.println("Initial settings:");
     Serial.printf("RPM Start: %d\n", settings.rpm_start);
     Serial.printf("RPM Increment: %d\n", settings.rpm_increment);
     Serial.printf("RPM Flash: %d\n", settings.rpm_flash);
     Serial.printf("Brightness: %d\n", settings.brightness);
+    */
 }
 
 void loop() {
@@ -153,11 +155,13 @@ void loop() {
     if (last_rpm_flash != RemoteXY.rpmFlashControl ||
         last_rpm_start != RemoteXY.rpmStartControl ||
         last_rpm_increment != RemoteXY.rpmIncrement) {
-        
+
+        /*
         Serial.println("\nControl values changed:");
         Serial.printf("RPM Flash: %d\n", RemoteXY.rpmFlashControl);
         Serial.printf("RPM Start: %d\n", RemoteXY.rpmStartControl);
         Serial.printf("RPM Increment: %d\n", RemoteXY.rpmIncrement);
+        */
 
         last_rpm_flash = RemoteXY.rpmFlashControl;
         last_rpm_start = RemoteXY.rpmStartControl;
